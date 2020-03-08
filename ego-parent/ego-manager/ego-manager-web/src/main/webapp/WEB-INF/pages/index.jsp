@@ -308,7 +308,7 @@
 </aside>
 
 <section class="content-wrapper right-side" id="riframe" style="margin:0px;padding:0px;margin-left:230px;">
-    <iframe id='rightContent' name='rightContent' src="welcome.jsp" width='100%' frameborder="0"></iframe>
+    <iframe id='rightContent' name='rightContent' src="${ctx}/welcome" width='100%' frameborder="0"></iframe>
 </section>
 
      <!-- Control Sidebar -->
