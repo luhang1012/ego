@@ -12,31 +12,7 @@
   			top: 0px;
   		}
   	</style>
-    <meta charset="UTF-8">
-    <title>ego管理后台</title>
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Bootstrap 3.3.4 -->
-    <link href="${ctx}/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <!-- FontAwesome 4.3.0 -->
- 	<link href="${ctx}/Public/bootstrap/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <!-- Ionicons 2.0.0 --
-    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
-    <!-- Theme style -->
-    <link href="${ctx}/Public/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
-    <!-- AdminLTE Skins. Choose a skin from the css/skins 
-    	folder instead of downloading all of them to reduce the load. -->
-    <link href="${ctx}/Public/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
-    <!-- iCheck -->
-    <link href="${ctx}/Public/plugins/iCheck/flat/blue.css" rel="stylesheet" type="text/css" />   
-    <!-- jQuery 2.1.4 -->
-    <script src="${ctx}/Public/plugins/jQuery/jQuery-2.1.4.min.js"></script>
-	<script src="${ctx}/Public/js/global.js"></script>
-    <script src="${ctx}/Public/js/myFormValidate.js"></script>    
-    <script src="${ctx}/Public/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="${ctx}/Public/js/layer/layer-min.js"></script><!-- 弹窗js 参考文档 http://layer.layui.com/-->
-    <script src="${ctx}/Public/js/myAjax.js"></script>
+      <%@include file="head.jsp"%>
     <script type="text/javascript">
     function delfunc(obj){
     	layer.confirm('确认删除？', {
