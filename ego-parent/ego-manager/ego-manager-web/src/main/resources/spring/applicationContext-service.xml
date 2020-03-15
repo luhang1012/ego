@@ -10,5 +10,5 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
     <!-- 设置使用注解的类所在的package(基本包)-->
-    <context:component-scan base-package="com.ego.service"/>
+    <context:component-scan base-package="com.ego.ego"/>
 </beans>

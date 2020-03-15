@@ -1,7 +1,12 @@
 package com.ego.controller;
 
+import com.ego.GoodsCategoryServiceI;
+import com.ego.impl.GoodsCategoryServiceImpl;
+import com.ego.result.BaseResult;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * Created by 15625 on 2020/3/11.
@@ -10,6 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/product")
 public class ProductController {
+    
+
     /**
      * 列表页
      * @return
@@ -28,5 +35,16 @@ public class ProductController {
     public String categoryAdd(){
 
         return "product/category/category-add";
+    }
+
+    /**
+     * 新增商品
+     * @return
+     */
+    @RequestMapping("/category/save")
+    @ResponseBody
+    public BaseResult categorySave(){
+
+        return ;
     }
 }

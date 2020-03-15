@@ -29,7 +29,7 @@
     <!-- 配置自动扫描mybatis Mapper.java Mapper.xml -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
     	<!-- 扫描包 -->
-    	<property name="basePackage" value="com.ego.mapper" />
+    	<property name="basePackage" value="com.ego.ego" />
     	<!-- sqlSessionFactoryBeanName是批factory的名称 此处使用value，而不是ref -->
     	<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
     </bean>
