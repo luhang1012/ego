@@ -1,2 +1,2 @@
-com\ego\enums\BaseResultEnum.class
-com\ego\result\BaseResult.class
+com\ego\service\enums\BaseResultEnum.class
+com\ego\service\result\BaseResult.class

@@ -1,8 +1,8 @@
 package com.ego.controller;
 
-import com.ego.GoodsCategoryServiceI;
-import com.ego.impl.GoodsCategoryServiceImpl;
-import com.ego.result.BaseResult;
+import com.ego.pojo.GoodsCategory;
+import com.ego.service.GoodsCategoryServiceI;
+import com.ego.service.result.BaseResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping("/product")
 public class ProductController {
-    
-
+    @Autowired
+    private GoodsCategoryServiceI goodsCategoryService;// 商品分类service
     /**
      * 列表页
      * @return
@@ -26,6 +26,7 @@ public class ProductController {
 
         return "product/category/category-list";
     }
+    
 
     /**
      * 新增商品页
@@ -43,8 +44,8 @@ public class ProductController {
      */
     @RequestMapping("/category/save")
     @ResponseBody
-    public BaseResult categorySave(){
+    public BaseResult categorySave(GoodsCategory goodsCategory){
 
-        return ;
+        return goodsCategoryService.insertCategory(goodsCategory);
     }
 }

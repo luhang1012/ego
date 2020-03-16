@@ -19,6 +19,10 @@
     
     <!-- 静态资源映射 location是本地静态资源路径 mapping是映射的url地址，访问时就使用该地址 -->
 	<mvc:resources location="/WEB-INF/static/" mapping="/**" />
+
+	<!-- 配置访问根路径对应资源操作 -->
+	<!-- 其中 path 表示为请求的路径，view-name 表示为你需要做的资源操作 -->
+	<mvc:view-controller path="/" view-name="index" />
     
     <!-- 配置jsp视图解析器 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
